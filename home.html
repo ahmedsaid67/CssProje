@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+        }
+        .head{
+            position: fixed;
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.178));
+            top: 0;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .search-container{
+            background-color: white;
+            font-size: 25px;
+            align-items: center;
+            margin-left: 85px;
+            margin-top: 10px;
+            display: flex;
+        }
+        .search{
+            margin-left:5px ;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+            border: none;
+        }
+        .gg-search {
+            
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs,1));
+            width: 16px;
+            height: 16px;
+            border: 2px solid;
+            border-radius: 100%;
+            margin-left: -4px;
+            margin-top: -10px;
+            background-color: black;
+        }
+        .gg-search::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            border-radius: 3px;
+            width: 2px;
+            height: 8px;
+            background: currentColor;
+            transform: rotate(-45deg);
+            top: 10px;
+            left: 12px
+        }
+        .menu-list{
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 80px;
+        }
+        ul{
+            background-color: white;
+            float: right;
+            font-size: 20px;
+            list-style-type:none
+            
+        }
+        li{
+            background-color: white;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 40px;
+        }
+        .menu-list i{
+            margin-right: 10px;
+        }
+        .container1{
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 50px;
+        }
+
+        .container{
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 20px;
+        }
+        h3{
+            margin-bottom: 10px;
+        }
+
+        .kutu-list-wrapper {
+            align-items: center;
+            overflow: hidden;
+        }
+
+.kutu-list {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  
+}
+
+.kutu-list-item {
+  margin-right: 10px;
+  position: relative;
+}
+
+.kutu-list-item-img {
+  width: 117px;
+  height: 80px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.item7{
+    -webkit-filter:blur(1px);
+    -moz-filter:blur(90px);
+}
+
+
+.list{
+    display: flex;
+    align-items: center;
+    height: 350px;
+}
+.kutu{
+    margin-right: 10px;
+    position: relative;
+}
+
+.kutu-img{
+    width: 275px;
+    height: 330px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.kutu-list-item-desc {
+  background-color: rgba(196, 190, 190, 0.433);
+  font-size: 14px;
+  position: absolute;
+  top: 70%;
+  width: 236px;
+  border-radius: 20px;
+  height: 55px;
+}
+p{
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="search-container">
+            <i class="gg-search"></i>
+            <input class="search" type="text" placeholder="Search">
+        </div>
+        <ul class="menu-list">
+            <i class="fa fa-home"></i>
+            <li class="menu-list-item active">Home</li>
+            <i style="color:gray" class="fas fa-heart"></i>
+            <li style="color:gray"  class="menu-list-item">My Favorites</li>
+            <i style="color:gray"  class="fas fa-user"></i>
+            <li style="color:gray"  class="menu-list-item">Profile</li>
+        </ul>  
+    </div>
+    <div class="container1">
+        <h3>Categories</h3>
+        <div class="slider">
+            <div class="kutu-list-wrapper">
+                <div class="kutu-list">
+                    <div class="kutu-list-item">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-1</small> </span>
+                    </div>
+                    <div class="kutu-list-item">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-2</small> </span>
+                    </div>
+                    <div class="kutu-list-item">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-3</small> </span>
+                    </div>
+                    <div class="kutu-list-item">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-4</small> </span>
+                    </div>
+                    <div class="kutu-list-item">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-5</small> </span>
+                    </div>
+                    <div class="kutu-list-item">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-6</small> </span>
+                    </div>
+                    <div class="kutu-list-item item7">
+                        <img class="kutu-list-item-img" src="img/img1.png" alt="">
+                        <span > <small>Category Tag-7</small> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Blog</h3>
+        <div class="list">
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 1</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 2</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 3</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="list">
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 4</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 5</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 6</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="list">
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 7</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 8</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+            <div class="kutu">
+                <img class="kutu-img" src="img/img1.png" alt="">
+                <p class="kutu-list-item-desc">
+                    <strong style="background-color:rgba(196, 190, 190, 0.433); ">Article 9</strong><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    hic fugit similique accusantium.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
